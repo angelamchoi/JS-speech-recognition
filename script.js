@@ -17,12 +17,12 @@ recognition.addEventListener('result', e => {
     p.textContent = transcript; 
     // check if result is final and create a new paragraph
     if(e.results[0].isFinal) {
-      p = document.createElement('p');
+      p = document.createElement('p'); 
       words.appendChild(p);
     }
-    if(transcript.includes('unicorn' || 'unicorns')) {
-      words.innerHTML = '🦄';
-    }
+    // if(transcript.includes('unicorn' || 'unicorns')) {
+    //   words.innerHTML = '🦄';
+    // }
     if(transcript.includes('dark mode')) {
       background.classList.toggle('dark-mode');
     }  

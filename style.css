@@ -69,10 +69,9 @@ button {
   border: 0;
   border-radius: 5px;
   display: flex;
-  padding: 4 2px;
+  padding: 10 4px;
   margin-left: 95%;
-  margin-top: 10px;
+  margin-top: 25px;
   font-size: 20px;
-  
 }
 
