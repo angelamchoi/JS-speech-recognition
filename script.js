@@ -22,15 +22,12 @@ recognition.addEventListener('result', e => {
     }
     if(transcript.includes('unicorn' || 'unicorns')) {
       words.innerHTML = '🦄';
-    }
-    if(transcript.includes('dark mode')) {
+    } else if(transcript.includes('dark mode')) {
       toggleDarkAndLightMode();
-    } 
-    if(transcript.includes('light mode')) {
+    } else if(transcript.includes('light mode')) {
       !toggleDarkAndLightMode();
-    }
-    if (transcript.includes ('harry potter')) {
-      window.open('https://www.youtube.com/watch?v=rPt79QYxXEc');
+    } else if (transcript.includes('you are a wizard harry')) {
+      words.innerHTML = '🧙‍♂️🔮🪄💫';
     }
 });
 
