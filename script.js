@@ -9,12 +9,13 @@ words.appendChild(p);
 
 recognition.addEventListener('result', e => {
   console.log(e.results);
-  const transcript = Array.from(e.results)
-    .map(result => result[0])
-    .map(result => result.transcript)
-    .join('');
+  const transcript = Array.from(e.results) //convert it into an array 
+    .map(result => result[0]) // grab the first thing in the array
+    .map(result => result.transcript) 
+    .join(''); // to get one big string
     
-    p.textContent = transcript;
+    p.textContent = transcript; 
+    // check if result is final and create a new paragraph
     if(e.results[0].isFinal) {
       p = document.createElement('p');
       words.appendChild(p);
