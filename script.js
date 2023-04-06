@@ -20,11 +20,11 @@ recognition.addEventListener('result', e => {
       p = document.createElement('p'); 
       words.appendChild(p);
     }
-    // if(transcript.includes('unicorn' || 'unicorns')) {
-    //   words.innerHTML = '🦄';
-    // }
+    if(transcript.includes('unicorn' || 'unicorns')) {
+      words.innerHTML = '🦄';
+    }
     if(transcript.includes('dark mode')) {
-      background.classList.toggle('dark-mode');
+      toggleDarkAndLightMode();
     }  
 });
 
