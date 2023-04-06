@@ -3,10 +3,23 @@ html {
 }
 
 body {
-  background: #ffc600;
+  background-color: #FD8A8A;
+  color: black;
   font-family: 'helvetica neue';
   font-weight: 200;
   font-size: 20px;
+}
+
+.dark-mode {
+  background-color: #0B2447;
+  color: black;
+}
+
+h1, .text-content {
+  color: white;
+}
+.container {
+  text-align: center;
 }
 
 .words {
@@ -35,5 +48,16 @@ p {
   bottom: 0;
   border: 1px solid;
   border-color: transparent #efe4e4;
+}
+
+button {
+  background: darkblue;
+  border: 0;
+  border-radius: 5px;
+  display: flex;
+  padding: 4 2px;
+  margin-left: 95%;
+  margin-top: 10px;
+  font-size: 20px;
 }
 

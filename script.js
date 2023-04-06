@@ -20,15 +20,21 @@ recognition.addEventListener('result', e => {
       p = document.createElement('p');
       words.appendChild(p);
     }
-    if(transcript.includes('get the weather')) {
-      console.log('getting the weather');
-    }
+    if(transcript.includes('unicorn')) {
+      words.innerHTML = '🦄';
+      console.log('🦄');
+    } 
     console.log(transcript)
 });
 
 recognition.addEventListener('end', recognition.start);
 
 recognition.start();
+
+const toggleDarkAndLightMode = () => {
+  let element = document.body;
+  element.classList.toggle("dark-mode");
+}
 
 
 
