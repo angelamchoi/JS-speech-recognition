@@ -1,6 +1,6 @@
-# Speak to Me
+# 🎙️ Speak to Me
 
 ## Overview
-A speech recognition application made with HTML, CSS, and JavaScript. Just say something and let the magic begin.
+A speech recognition site made with HTML, CSS, and JavaScript. Make sure your mic is on, say something, and let the magic begin.
 
-https://speak2me.netlify.app/
+🚀 Deployed site can be found here [here](https://speak2me.netlify.app/).
