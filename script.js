@@ -20,17 +20,19 @@ recognition.addEventListener('result', e => {
       p = document.createElement('p');
       words.appendChild(p);
     }
-    if(transcript.includes('unicorn')) {
+    if(transcript.includes('unicorn' || 'unicorns')) {
       words.innerHTML = '🦄';
-      console.log('🦄');
-    } 
-    console.log(transcript)
+    }
+    if(transcript.includes('dark mode')) {
+      background.classList.toggle('dark-mode');
+    }  
 });
 
 recognition.addEventListener('end', recognition.start);
 
 recognition.start();
 
+// Dark and Light Mode
 const toggleDarkAndLightMode = () => {
   let element = document.body;
   element.classList.toggle("dark-mode");
