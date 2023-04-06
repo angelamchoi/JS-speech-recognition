@@ -28,7 +28,10 @@ recognition.addEventListener('result', e => {
     } 
     if(transcript.includes('light mode')) {
       !toggleDarkAndLightMode();
-    } 
+    }
+    if (transcript.includes ('harry potter')) {
+      window.open('https://www.youtube.com/watch?v=rPt79QYxXEc');
+    }
 });
 
 recognition.addEventListener('end', recognition.start);
