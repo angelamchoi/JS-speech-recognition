@@ -1,5 +1,5 @@
 html {
-  font-size: 10px;
+  font-size: 20px;
 }
 
 body {
@@ -12,13 +12,27 @@ body {
 
 .dark-mode {
   background-color: #0B2447;
-  color: black;
+  color: black; 
 }
 
-h1, .text-content {
+.title, .text-content, footer, a, .info {
   color: white;
 }
-.container {
+
+.info {
+  font-weight: bold;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.text-content {
+  font-size: 1.5rem;
+}
+
+.container, footer {
   text-align: center;
 }
 
@@ -59,5 +73,6 @@ button {
   margin-left: 95%;
   margin-top: 10px;
   font-size: 20px;
+  
 }
 
