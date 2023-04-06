@@ -25,7 +25,10 @@ recognition.addEventListener('result', e => {
     }
     if(transcript.includes('dark mode')) {
       toggleDarkAndLightMode();
-    }  
+    } 
+    if(transcript.includes('light mode')) {
+      !toggleDarkAndLightMode();
+    } 
 });
 
 recognition.addEventListener('end', recognition.start);
