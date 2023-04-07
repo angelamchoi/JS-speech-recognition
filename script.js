@@ -26,9 +26,7 @@ recognition.addEventListener('result', e => {
       toggleDarkAndLightMode();
     } else if(transcript.includes('light mode')) {
       !toggleDarkAndLightMode();
-    } else if (transcript.includes('you are a wizard harry')) {
-      words.innerHTML = '🧙‍♂️🔮🪄💫';
-    }
+    } 
 });
 
 recognition.addEventListener('end', recognition.start);
